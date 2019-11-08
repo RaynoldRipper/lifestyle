@@ -1,0 +1,41 @@
+.video {
+  padding-top: 20px;
+  padding-bottom: 45px;
+  background-color: #000;
+  &__tab-list{
+    list-style: none;
+    display: flex;
+    padding: 15px 0;
+    margin: 0;
+  }
+  &__tab-item{
+    padding-right: 35px;
+    &>a{
+      &:hover{
+        color: var(--main-color-primary);
+      }
+    }
+
+  }
+  &__link{
+    color: var(--main-color-white);
+    font-size: 16px;
+  }
+  &__comments{
+    padding-top: 35px;
+    &::before{
+      content: "< >";
+      display: block;
+      color: white;
+      text-align: right;
+      font-size: 50px;
+      line-height: 40px;
+      padding-bottom: 15px;
+    }
+  }
+  &__comment{
+    p{
+      margin: 5px 0;
+    }
+  }
+}

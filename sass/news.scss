@@ -1,0 +1,122 @@
+.news>div>div{
+  padding: 0;
+}
+.news__slider{
+  position: relative;
+  &-wrapper{
+    position: absolute;
+    bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.news__weather{
+  position: relative;
+}
+
+.weather-h3{
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  color: #ffffff;
+  font-size: 16px;
+}
+@media (max-width:768px){
+  .news__weather{
+    display: none;
+  }
+  .news__slider-wrapper{
+    display: none;
+  }
+}
+
+.news{
+  &__weather-wrapper{
+    position: absolute;
+    width: 217px;
+    height: 168px;
+    top: 31.11%;
+    left: 13.69%;
+  }
+  &__svg-weather{
+    position: absolute;
+    fill: #ffffff;
+  }
+  &__weather-temperature{
+    position: absolute;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+    top: 5px;
+    left: 150px;
+  }
+  &__weather-humidity{
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    top: 135px;
+    left: 175px ;
+  }
+  &__card{
+    position: relative;
+    box-shadow:inset 0px 0px 50px 10px rgba(0, 0, 0, 1);
+    transition: all 0.2s;
+    &:hover{
+      box-shadow:inset 0px 0px 100px 20px rgba(0, 0, 0, 1);
+    }
+    &--business{
+      background: url(../img/business.jpg) no-repeat;
+      background-size: 100% 100%;
+    }
+    &--sports{
+      background: url(../img/Sport.jpg) no-repeat;
+      background-size: 100% 100%;
+    }
+    &--fashion{
+      background: url(../img/Fashion.jpg) no-repeat;
+      background-size: 100% 100%;
+    }
+    &--entertainment{
+      background: url(../img/Entertainment.jpg) no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  &__content{
+    display: block;
+    padding: 18px;
+    p:first-child{
+      display: inline;
+    }
+    p:last-child{
+      margin-top:130px;
+      margin-bottom: 0px;
+    }
+    &:hover{
+      text-decoration: none;
+      .news__link{
+        animation-name: border;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+  &__link{
+    color: var(--main-color-white);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: #fff200 solid 4px;
+    transition: all 0.5s;
+  }
+}
+
+@keyframes border {
+  50%{
+    border-bottom: 0px
+  }
+  100%{
+    border-bottom:#00b7ff solid 4px;
+  }
+}

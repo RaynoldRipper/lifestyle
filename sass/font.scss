@@ -1,0 +1,57 @@
+.h2{
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding-top: 15px;
+}
+.h3{
+  font-size: 16px;
+  color: var(--main-color-primary);
+  font-weight: bold;
+  &--black{
+    color: #4c443e;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+.p-text{
+  color: #ffffff;
+  font-size: 14px;
+  &--16{
+    font-size: 16px;
+  }
+  &--black{
+    color: #000000;
+    font-size: 14px;
+  }
+}
+
+.time{
+  color: var(--time-color);
+  text-align: right;
+  display: block;
+  line-height: 16px;
+}
+
+.main-color{
+  color: var(--main-color-primary);
+  &:hover{
+    color: var(--main-color-secondary);
+  }
+}
+
+.secondary-color{
+  color: var(--main-color-secondary);
+}
+
+.upercase{
+  text-transform: uppercase;
+}
+
+.underline{
+  border-bottom: var(--main-color-secondary) solid 3px; 
+}
+
+.bold{
+  font-weight: bold;
+}

@@ -1,0 +1,46 @@
+.main-footer{
+  padding: 0 15px;
+  background-color: var(--main-color-footer);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p{
+    margin: 0;
+    color: white;
+  }
+  &__policy{
+    display: flex;
+    align-items: center;
+    a, p{
+      padding-right: 10px;
+    }
+  }
+  &__social{
+    display: flex;
+    align-items: center;
+    p,a{
+      padding-left: 10px;
+    }
+  }
+}
+.social-button{
+  fill: var(--main-color-primary);
+  transition: all 0.5s;
+  &:hover{
+    transform: rotate(360deg) scale(1.2);
+  }
+}
+
+@media (max-width:1024px){
+  .main-footer{
+    display: block;
+    margin: auto;
+    text-align: center;
+    &__policy, &__social{
+      justify-content: center;
+    }
+    div{
+      padding: 10px 0;
+    }
+  }
+}

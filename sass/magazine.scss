@@ -1,0 +1,32 @@
+.magazine{
+  &__picture1{
+    background: url(../img/pict1.jpg) no-repeat;
+    background-size: 100% 100%;
+  }
+  &__picture2{
+    background: url(../img/pict2.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  &__picture3{
+    background: url(../img/pict3.jpg) no-repeat;
+    background-size: 100% 100%;
+  }
+  &__picture4{
+    background: url(../img/pict4.jpg) no-repeat;
+    background-size: 100% 100%;
+  }
+  &__card{
+    background: url(../img/overlay.png);
+    z-index: 1;
+    width: 100%;
+    &>div{
+      height: 100%;
+    }
+  }
+  &__content{
+    padding-bottom: 40px;
+    &>a{
+      color: var(--main-color-primary);
+    }
+  }
+}

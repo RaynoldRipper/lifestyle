@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>LiFEsTyle</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+	<header class="container-fluid main-header">
+		<div class="row align-items-center main-header__wrapper">
+				<div class="col-md-3  logo">
+						<h1 class="logo-text">LiFEsTyle<span class="logo-dott">.</span></h1>
+					</div>
+					<nav class="col-md-6 main-nav">
+						<ul class="main-nav__list nav">
+							<li class="main-nav__item">
+								<a class="nav-link" href="#">Home</a>
+							</li>
+							<li class="main-nav__item nav-item">
+								<a class="nav-link" href="#">Fashion</a>
+							</li>
+							<li class="main-nav__item nav-item">
+								<a class="nav-link" href="#">Business</a>
+							</li>
+							<li class="main-nav__item nav-item">
+								<a class="nav-link" href="#">Sports</a>
+							</li>
+							<li class="main-nav__item nav-item">
+								<a class="nav-link" href="#">Entertainment</a>
+							</li>
+							<li class="main-nav__item nav-item">
+								<a class="nav-link" href="#">Magazine</a>
+							</li>
+							<li class="main-nav__item nav-item">
+								<a class="nav-link" href="#">Tv</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- Navigation -->
+					<ul class="col-md-3 user-nav">
+						<li class="user-nav__item"><a href="#">Login</a></li>
+						<li class="user-nav__item"><a href="#">Register</a></li>
+						<li class="user-nav__item">
+							<svg class="icon-search" width="18" height="18">
+								<use xlink:href="./sprite.svg#search-icon"/>
+							</svg>
+						</li>
+					</ul>
+					<!-- User nav -->
+		</div>
+	</header>
+	<!-- Header -->
+	<main>
+		<section class="news container-fluid">
+			<h2 class="visually-hidden">News</h2>
+			<div class="news__wrapper row">
+					<div id="carouselExampleIndicators" class="carousel slide col-md-9" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-block w-100" src="./img/slider1.jpg" alt="First slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="./img/slider1.jpg" alt="Second slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="./img/slider1.jpg" alt="Third slide">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+							<div class="news__slider-wrapper">
+									<h3 class="h3">The vintage crew rolls into town !</h3>
+									<p class="p-text">Concours might be a few months from now but that has not
+									stopped the vintage crew from showing of  a taste of what is to come in the year 2014</p>
+								</div>
+						</div>
+				<div class="news__weather col-md-3">
+					<h3 class="weather-h3">Nairobi, Kenya </h3>
+					<div class="news__weather-wrapper">
+						<svg class="news__svg-weather" width="217" height="168">
+							<use xlink:href="./sprite.svg#icon-weather" />
+						</svg>
+						<p class="news__weather-temperature">12</p>
+						<p class="news__weather-humidity">64%</p>
+					</div>
+					<img src="./img/weather.jpg" width="100%" height="100%" alt="Weather">
+				</div>
+
+				<div class="news__card news__card--business col-md-3 col-sm-6	">
+					<a href="" class="news__content">
+						<p class="news__link" href="">Business</p>
+						<p class="p-text bold">La’ Bella Caffe’ opens in town</p>
+					</a>
+				</div>
+				<div class="news__card news__card--sports col-md-3 col-sm-6">
+					<a href="" class="news__content">
+						<p class="news__link" href="">Sports</p>
+						<p class="p-text bold">Early morning with Yaya Toure</p>
+					</a>
+				</div>
+				<div class="news__card news__card--fashion col-md-3 col-sm-6">
+					<a href="" class="news__content">
+						<p class="news__link" href="">Fashion</p>
+						<p class="p-text bold">Stop Looking! Stop Staring !</p>
+					</a>
+				</div>
+				<div class="news__card news__card--entertainment col-md-3 col-sm-6">
+					<a href="" class="news__content">
+						<p class="news__link">Entertainment</p>
+						<p class="p-text bold">Interview with Carlos Allopos</p>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- news -->
+		<section class="video container-fluid">
+			<div class="video__wrapper row">
+				<div class="video__container col-md-9">
+					<ul class="video__tab-list">
+						<li class="video__tab-item">
+							<a class="video__link upercase bold" id="pills-fashion-tab" data-toggle="pill" href="#pills-fashion" role="tab" aria-controls="pills-fashion" aria-selected="false">Fasion</a>
+						</li>
+
+						<li class="video__tab-item">
+							<a class="video__link upercase bold" id="pills-business-tab" data-toggle="pill" href="#pills-business" role="tab" aria-controls="pills-business" aria-selected="false">Business</a>
+						</li>
+
+						<li class="video__tab-item">
+							<a class="video__link upercase bold" id="pills-sports-tab" data-toggle="pill" href="#pills-sports" role="tab" aria-controls="pills-sports" aria-selected="false">Sports</a>
+						</li>
+
+						<li class="video__tab-item">
+							<a class="video__link upercase bold" id="pills-entertainment-tab" data-toggle="pill" href="#pills-entertainment" role="tab" aria-controls="pills-home" aria-selected="true">Entertainment</a>
+						</li>
+						<li class="video__tab-item">
+							<a class="video__link bold" id="pills-tv-tab" data-toggle="pill" href="#pills-tv" role="tab" aria-controls="pills-tv" aria-selected="false">liFEsTyle.TV</a>
+						</li>
+
+					</ul>
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane fade" id="pills-fashion" role="tabpanel" aria-labelledby="pills-fashion-tab"><img src="./img/video.jpg" width="100%" alt=""></div>
+						<div class="tab-pane fade" id="pills-business" role="tabpanel" aria-labelledby="pills-business-tab"><img src="./img/video.jpg" width="100%" alt=""></div>
+						<div class="tab-pane fade" id="pills-sports" role="tabpanel" aria-labelledby="pills-sports-tab"><img src="./img/video.jpg" width="100%" alt=""></div>
+						<div class="tab-pane fade  show active" id="pills-entertainment" role="tabpanel" aria-labelledby="pills-entertainment-tab"><img width="100%" src="./img/video.jpg" alt=""></div>
+						<div class="tab-pane fade" id="pills-tv" role="tabpanel" aria-labelledby="pills-tv-tab"><img src="./img/video.jpg" width="100%" alt=""></div>
+					</div>
+				</div>
+				<div class="video__comments col-md-3">
+					<div class="video__comment">
+						<span class="p-text--16 time">01:14</span>
+						<p class="p-text--16 main-color">Transformers: Age of Extinction, set to hit the cinemas come March 2014</p>
+					</div>
+					<div class="video__comment">
+							<span class="p-text--16 time">00:46</span>
+							<p class="p-text--16 main-color">Kanye West  planning to have a new baby with Kim Kardashian</p>
+					</div>
+					<div class="video__comment">
+							<span class="p-text--16 time">01:14</span>
+							<p class="p-text--16 main-color">Microsoft announces big plans for Halo 5, support for Unreal Engine 4 games</p>
+					</div>
+					<div class="video__comment">
+							<span class="p-text--16 time">01:14</span>
+							<p class="p-text--16 main-color">Test driving the  new Audi S5, va va Vooooooooooom !</p>
+					</div>
+					<div class="video__comment">
+							<span class="p-text--16 time">01:14</span>
+							<p class="p-text--16 main-color">Game of thrones on track, say producers</p>
+					</div>
+				</div>
+			</div>
+			<!-- comments -->
+		</section>
+		<!-- Video -->
+		<section class="magazine container-fluid">
+			<div class="magazine__warpper row">
+				<div class="col-md-12 col-lg-6 magazine__card">
+					<div class="row">		
+						<div class="col-md-6 col-sm-6 magazine__picture1"></div>
+						<div class="col-md-6 col-sm-6 magazine__content">
+							<h2 class="h2 secondary-color underline">Magzine</h2>
+							<h3 class="h3--black">Managing the ever growing population in urban areas</h3>
+							<p class="p-text--black">Over the last 20 years, the population in urban areas has grown by 20%. This poses a challenge in housing.</p>
+							<p class="p-text--black">We speak to one expert on how best we can accomodate this growing numbers </p>
+							<a href="#">Read More</a>
+						</div>
+					</div>	
+				</div>
+				<div class="col-md-12 col-lg-6 magazine__card">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 magazine__picture2"></div>
+						<div class="col-md-6 col-sm-6 magazine__content">
+							<h2 class="h2 secondary-color underline">Magzine</h2>
+							<h3 class="h3--black">Scenic Gateaways : Valentines Edition</h3>
+							<p class="p-text--black">It’s Valentines again ! We here at liFEsTlye have some incredible scenic gateaways that will help 
+								you rekindle the romance in your relationship.</p>
+							<p class="p-text--black">a look inside to find out :)</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 col-lg-6 magazine__card">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 magazine__content">
+							<h2 class="h2 secondary-color underline">Magzine</h2>
+							<h3 class="h3--black">Cooking up a delicious meal for the weekend’s outdoor</h3>
+							<p class="p-text--black">We have prepared a delicious menu that you might employ come the weekend. </p>
+							<p class="p-text--black">With the weather predicted to be sunny, we decide to show you how to up the heat with some spicy course.</p>
+							<a href="#">Read More</a>
+						</div>
+						<div class="col-md-6 col-sm-6 magazine__picture3"></div>
+					</div>
+				</div>
+				<div class="col-md-12 col-lg-6 magazine__card">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 magazine__content">
+							<h2 class="h2 secondary-color underline">Magzine</h2>
+							<h3 class="h3--black">Up All Night: The 24hr Gaming challenge</h3>
+							<p class="p-text--black">A Nintendo Wii, three gaming buffs, seven game titles, bags of crisps, sodas, red bulls and a comoftable couch. 
+								Who will be the last man(or woman) standing?</p>
+							<p class="p-text--black">Incredibly stupid, Utterly fun. Let’s GO...</p>
+							<a href="#">Read More</a>
+						</div>
+						<div class="col-md-6 col-sm-6 magazine__picture4"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Magazine -->
+		<footer class="main-footer">
+			<div class="main-footer__logo"><h1 class="logo-text--footer">LiFEsTyle<span class="logo-dott">.</span></h1></div>
+			<div class="main-footer__policy">
+				<a class="main-color" href="#">Privacy Policy</a>
+				<a class="main-color" href="#">Terms & Conditions</a>
+				<p>Copyright 2014. All rights reserved.</p>
+			</div>
+			<div class="main-footer__social">
+				<p>Connect with us :</p>
+				<a href="#">
+					<svg class="social-button" width="32" height="32">
+						<use xlink:href="./sprite.svg#icon-twitter" />
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="social-button" width="32" height="32">
+						<use xlink:href="./sprite.svg#icon-instagramm" />
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="social-button" width="32" height="32">
+						<use xlink:href="./sprite.svg#icon-facebook" />
+					</svg>
+				</a>
+			</div>
+		</footer>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
